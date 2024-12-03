@@ -1,0 +1,90 @@
+{ "": [
+
+    {"name": "ShaderTerrainMesh",
+      "class": "ShaderTerrainMesh",
+      "vars": {
+        "chunk_size": {
+          "property": "chunk_size",
+          "type": "int"
+        },
+        "generate_patches": {
+          "property": "generate_patches",
+          "type": "bool"
+        },
+        "heightfield": {
+          "property": "heightfield",
+          "type": "texture"
+        },
+        "target_triangle_width": {
+          "property": "target_triangle_width",
+          "type": "float"
+        },
+        "update_enabled": {
+          "property": "update_enabled",
+          "type": "bool"
+        }
+      }
+    },
+  {
+    "name": "HeightfieldTesselator",
+    "class": "HeightfieldTesselator",
+    "vars": {
+      "Elevation": {
+        "get": "getElevation",
+        "set": "setElevation",
+        "type": [
+          "float",
+          "float"
+        ]
+      },
+      "FocalPoint": {
+        "get": "getFocalPoint",
+        "set": "setFocalPoint",
+        "type": [
+          "float",
+          "float"
+        ]
+      },
+      "HorizontalScale": {
+        "get": "getHorizontalScale",
+        "set": "setHorizontalScale",
+        "type": "float"
+      },
+      "Heightfield": {
+        "get": "getHeightfield",
+        "set": "setHeightfield",
+        "type": "str"
+      },
+      "setMaxTriangles": {
+        "set": "setMaxTriangles",
+        "type": "int"
+      },
+      "setPolyCount": {
+        "set": "setPolyCount",
+        "type": "int"
+      },
+      "setVerticalScale": {
+        "set": "setVerticalScale",
+        "type": "float"
+      },
+      "setVisibilityRadius": {
+        "set": "setVisibilityRadius",
+        "type": "int"
+      }
+    }
+  },
+  {
+    "name": "GeoMipTerrain",
+    "class": "GeoMipTerrain",
+    "vars": {
+      "AutoFlatten": {
+        "get": "getAutoFlatten",
+        "set": "setAutoFlatten",
+        "type": "AutoFlattenMode"
+      },
+      "": {}
+    }
+  }
+
+]
+}

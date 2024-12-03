@@ -1,0 +1,54 @@
+{"": [
+  {"name": "Collision Node", "class":  "CollisionNode",
+    "vars":  {
+    "Collide Mask":  {"get":  "", "set": "",  "type": "BitMask32"},
+      "Collider Sort": {"get":  "getColliderSort", "set":  "setColliderSort", "type":  "int"},
+      "Solids": {"get":  "solids", "set":  "setSolid", "type":  ["int", "CollisionSolid"]}
+  }
+  },
+  {
+    "name":  "BulletBodyNode",
+    "class": "BulletBodyNode",
+    "vars": {
+      "active": {"get":  "active", "set":  "active", "type":  "bool"},
+      "anisotropic_friction": {"get":  "anisotropic_friction", "set":  "anisotropic_friction", "type":  "Vec3"},
+      "ccd_swept_sphere_radius": {"get":  "ccd_swept_sphere_radius", "set": "ccd_swept_sphere_radius", "type":  "float"},
+      "contact_processing_threshold": {"get":  "contact_processing_threshold", "set": "contact_processing_threshold", "type":  "float"},
+      "debug_enabled": {"get":  "debug_enabled", "set": "debug_enabled", "type":  "float"},
+      "friction": {"get":  "friction", "set": "friction", "type":  "float"},
+      "kinematic": {"get":  "kinematic", "set": "kinematic", "type":  "bool"},
+      "restitution ": {"get":  "restitution", "set": "restitution", "type":  "float"},
+      "deactivation_enabled": {"get":  "deactivation_enabled", "set":  "deactivation_enabled", "type":  "bool"},
+      "deactivation_time": {"get":  "deactivation_time", "set":  "deactivation_time", "type":  "float"},
+      "Shapes": {"get":  "getShapes", "set":  "setShapes", "type":  "BulletShapes", "array":  true}
+
+    },
+    "hidden": true
+  },
+  {
+    "name": "Bullet Ghost Node",
+    "class": "BulletGhostNode",
+    "parent": ["BulletBodyNode"]
+
+  },
+  {
+    "name": "BulletRigidBodyNode",
+    "class": "BulletRigidBodyNode",
+    "parent": ["BulletBodyNode"],
+    "vars": {
+      "angular_damping": {"get": "angular_damping", "set": "angular_damping", "type": "float"},
+      "angular_factor ": {"get": "angular_factor", "set": "angular_factor", "type": "vec3"},
+      "angular_sleep_threshold ": {"get": "angular_sleep_threshold", "set": "angular_sleep_threshold", "type": "float"},
+      "angular_velocity ": {"get": "angular_velocity", "set": "angular_velocity", "type": "float"},
+      "gravity": {"get": "gravity", "set": "gravity", "type": "float"},
+      "inertia": {"get": "inertia", "set": "inertia", "type": "vec3"},
+      "linear_damping": {"get": "linear_damping", "set": "linear_damping  ", "type": "float"},
+      "linear_factor": {"get": "linear_factor", "set": "linear_factor", "type": "vec3"},
+      "linear_sleep_threshold": {"get": "linear_sleep_threshold", "set": "linear_sleep_threshold  ", "type": "float"},
+      "linear_velocity": {"get": "linear_velocity", "set": "linear_velocity", "type": "vec3"},
+      "mass": {"get": "mass", "set": "mass", "type": "float"}
+
+    }
+  }
+]
+}

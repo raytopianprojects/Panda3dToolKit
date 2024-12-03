@@ -1,0 +1,74 @@
+{
+  "":
+  [
+    {
+      "name": "ComputeNode",
+      "class": "ComputeNode",
+      "vars": {
+        "dispatches": {"set": "setDispatch", "get": "getDispatches","add": "addDispatch", "clear": "clearDispatches", "type": ["vec3i"]}
+      }
+    },
+    {
+      "name": "UvScrollNode",
+      "class": "UvScrollNode",
+      "vars": {
+        "r_speed": {"property": "r_speed", "type": "float"},
+        "w_speed": {"property": "w_speed", "type": "float"},
+        "u_speed": {"property": "u_speed", "type": "float"},
+        "v_speed": {"property": "v_speed", "type": "float"}
+      }
+
+    },
+    {
+      "name": "SequenceNode",
+      "class": "SequenceNode",
+      "vars": {
+        "frame_rate": {"property": "frame_rate", "type": "float"},
+        "play": {"function": "play"},
+        "loop": {"function": "loop"}
+      }
+    },
+    {
+      "name": "SwitchNode",
+      "class": "SwitchNode",
+      "vars": {
+        "visible_child": {"property": "visible_child", "type": "int"}
+      }
+    },
+    {
+      "hidden": true,
+      "name": "MotionTrail",
+      "class": "MotionTrail",
+      "vars": {}
+    },
+    {
+      "name": "Fog",
+      "class": "Fog",
+      "vars": {
+        "color": {"property": "color", "type": "vec4"},
+        "exp_density": {"property": "exp_density", "type": "float"},
+        "linear_onset_point": {"property": "linear_onset_point", "type": "vec3"},
+        "linear_opaque_point": {"property": "linear_opaque_point", "type": "vec3"},
+        "mode": {"property": "mode", "type": "Fog"}
+      }
+    },
+    {
+      "hidden": true,
+      "name": "Particles",
+      "class": "Particles",
+      "vars": {}
+    },
+    {
+      "hidden": true,
+      "name": "SheetNode",
+      "class": "SheetNode",
+      "vars": {}
+    },
+    {
+      "hidden": true,
+      "name": "RopeNode",
+      "class": "RopeNode",
+      "vars": {}
+    }
+  ]
+}

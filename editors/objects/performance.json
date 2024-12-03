@@ -1,0 +1,48 @@
+{"":
+[
+  {
+    "name": "LODNode",
+    "class": "LODNode",
+    "vars": {
+      "center": {"get": "getCenter", "set":  "setCenter", "type": "vec3"},
+      "lod scale": {"property": "lod_scale", "type": "float"},
+      "show": {"on": "showAllSwitches", "off": "hideAllSwitches"},
+      "switches": {"set": "setSwitch", "add": "addSwitch", "get": ["getOut", "getIn"], "type": ["float", "float"]}
+    }
+  },
+  {
+    "name": "FadeLODNode",
+    "class": "FadeLODNode",
+    "parent": ["LODNode"],
+    "vars": {
+      "fade time": {"get": "getFadeTime", "set":  "setFadeTime", "type": "float"},
+      "fade bin": {"get": ["getFadeBinName","fade_bin_draw_order"], "set":  "setFadeBinName", "type": ["str", "int"]}
+    }
+  },
+  {
+    "name": "OccluderNode",
+    "class": "OccluderNode",
+    "vars": {
+      "double_sided": {"property": "double_sided", "type": "bool"},
+      "min_coverage": {"property": "min_coverage", "type": "float"},
+      "vertices": {"get": "getVertices", "set": "setVertices", "type": "var4"}
+    },
+    "init": {
+      "name": "str"
+    }
+  },
+    {
+    "name": "PortalNode",
+    "class": "PortalNode",
+    "hidden": true,
+    "vars": {
+      "clip_plane": {"property": "clip_plane", "type": "bool"},
+      "from_portal_mask": {"property": "from_portal_mask", "type": "PortalMask"},
+      "into_portal_mask": {"property": "into_portal_mask", "type": "PortalMask"}
+    },
+    "init": {
+      "name": "str"
+    }
+  }
+]
+}

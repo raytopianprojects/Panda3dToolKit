@@ -1,0 +1,8 @@
+{"BulletShapes": {
+  "Sphere ": {"class":  "BulletSphereShape"},
+  "Plane": {"class":  "BulletPlaneShape"},
+  "Box": {"class":  "BulletBoxShape"},
+  "Cylinder": {"class":  "BulletCylinderShape"},
+  "Capsule": {"class": "BulletCapsuleShape"},
+  "Cone": {"class":  "BulletConeShape"}
+}}

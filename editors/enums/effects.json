@@ -1,0 +1,8 @@
+{
+  "Fog":
+  {
+    "M_linear": 0,
+    "M_exponential": 1,
+    "M_exponential_squared": 2
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "Lights": [
+    {
+      "name": "Spotlight",
+      "class": "Spotlight",
+      "vars": {
+        "Color": {"get":  "getColor", "set":  "setColor", "type":  "vec4", "range":  [0,10000]},
+        "Color Temperature": {"get":  "getColorTemperature", "set":  "setColorTemperature", "type": "float", "range":  [1000, 9000]},
+        "Attenuation": {"get":  "getAttenuation", "set":  "setAttenuation", "type":  "vec3"}
+      }
+  },    {
+      "name": "PointLight",
+      "class": "PointLight",
+      "vars": {
+        "Color": {"get":  "getColor", "set":  "setColor", "type":  "vec4", "range":  [0,10000]},
+        "Color Temperature": {"get":  "getColorTemperature", "set":  "setColorTemperature", "type": "float", "range":  [1000, 9000]},
+        "Attenuation": {"get":  "getAttenuation", "set":  "setAttenuation", "type":  "vec3"}
+      }
+  },    {
+      "name": "DirectionalLight",
+      "class": "DirectionalLight",
+      "vars": {
+        "Color": {"get":  "getColor", "set":  "setColor", "type":  "vec4", "range":  [0,10000]},
+        "Color Temperature": {"get":  "getColorTemperature", "set":  "setColorTemperature", "type": "float", "range":  [1000, 9000]}
+      }
+  },
+    {
+      "name": "AmbientLight",
+      "class": "AmbientLight",
+      "vars": {
+        "Color": {
+          "get": "getColor",
+          "set": "setColor",
+          "type": "vec4",
+          "range": [
+            0,
+            10000
+          ]
+        },
+        "Color Temperature": {
+          "get": "getColorTemperature",
+          "set": "setColorTemperature",
+          "type": "float",
+          "range": [
+            1000,
+            9000
+          ]
+        }
+      }
+    }
+  ]
+}
